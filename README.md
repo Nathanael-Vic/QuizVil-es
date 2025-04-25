@@ -1,34 +1,18 @@
 Quiz: Qual vilão é a sua cara?
-Esse é um quiz interativo feito com HTML, CSS e JavaScript, onde o usuário responde 10 perguntas e descobre qual vilão mais combina com sua personalidade.
-A proposta é simples: você responde perguntas sobre atitudes, gostos e motivações... e no final, o sistema calcula qual vilão mais se encaixa com suas respostas. Os vilões disponíveis são:
-
-Coringa
-
-Cruella
-
-Darth Vader
-
-Homelander
-
-Lex Luthor
-
-Loki
-
-Malévola
-
-Scar
-
-Thanos
-
-Úrsula
-
-O quiz soma pontos para cada vilão conforme suas escolhas e mostra o resultado ao final.
+Um quiz simples feito com HTML, CSS e JavaScript onde, ao responder 10 perguntas, o usuário descobre qual vilão mais combina com sua personalidade.
 
 Tecnologias usadas
-HTML5
+HTML
 
-CSS3
+CSS
 
-JavaScript (puro, sem frameworks)
+JavaScript (puro)
 
-LocalStorage para armazenar o vilão vencedor entre páginas
+LocalStorage (para guardar o resultado final)
+
+Melhorias futuras
+Ainda faltam alguns ajustes visuais, como:
+
+Mudar o fundo da tela conforme o vilão sorteado
+
+Deixar o nome do vilão com uma cor diferente para cada um no resultado
