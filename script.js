@@ -142,14 +142,26 @@ function exibirPergunta() {
 
     for (let i = 0; i < 6; i++) {
         const opcaoElemento = document.getElementById(`opcao${i + 1}`);
+        const opcao = pergunta.opcoes[i];
 
-            opcaoElemento.textContent = pergunta.opcoes[i].texto;
-            opcaoElemento.dataset.vilao = pergunta.opcoes[i].vilao;
-             
-            opcaoElemento.onclick = function() {
+        opcaoElemento.textContent = opcao.texto;
+        opcaoElemento.dataset.vilao = opcao.vilao;
+
+        if (opcao.vilao2 !== undefined) {
+            opcaoElemento.dataset.vilao2 = opcao.vilao2;
+        } else {
+            delete opcaoElemento.dataset.vilao2;
+        }
+
+        opcaoElemento.onclick = function() {
             adicionarPonto(parseInt(opcaoElemento.dataset.vilao));
+
+            if (opcaoElemento.dataset.vilao2) {
+                adicionarPonto(parseInt(opcaoElemento.dataset.vilao2));
+            }
+
             proximaPergunta();
-            };
+        };
     }
 }
 
